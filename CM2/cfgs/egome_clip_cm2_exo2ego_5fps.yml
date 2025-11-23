@@ -1,0 +1,79 @@
+id: egome_clip_cm2_exo2ego_5fps
+
+# visual_feature_type: ['clip']
+# visual_feature_folder: ['/data1/zhaofeng/EgoMe_processing/EgoMe_dataset_new/egome_5fps_clipvitl14.pth']
+
+# gaze_crop_feature_folder: ['/data1/zhaofeng/EgoMe_processing/EgoMe_dataset_new/egome_gazeonly_5fps_clipvitl14.pth']
+
+visual_feature_type: ['clip']
+visual_feature_folder: ['/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_dataset_new/video_clipl_features_5fps/']
+
+gaze_crop_feature_folder: ['/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_dataset_new/video_gazeonly_clipl_features_5fps/']
+
+feature_dim: 768
+invalid_video_json: []
+train_caption_file: '/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_new_jsons/official_split_processed/egome_train_exo.json'
+val_caption_file: '/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_new_jsons/official_split_processed/egome_val_ego.json'
+gt_file_for_eval: ['/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_new_jsons/official_split_processed/egome_val_ego.json']
+gt_file_for_para_eval: ['/data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_new_jsons/official_split_processed/para_egome_val_ego.json']
+
+dict_file: /data1/zhaofeng/GCEAN/EgoMe_processing/EgoMe_new_jsons/official_split_processed/vocabulary_egome.json
+
+enable_contrastive: False
+
+vocab_size: 4545
+
+train_proposal_type: gt
+train_proposal_sample_num: 30
+sample_method: nearest
+
+batch_size: 1
+# lr: 0.00005
+learning_rate_decay_start: 8
+learning_rate_decay_every: 3
+learning_rate_decay_rate: 0.5
+weight_decay: 0.0001
+save_all_checkpoint: 0
+
+
+epoch: 30
+
+num_queries: 100
+dec_layers: 2
+enc_layers: 2
+transformer_ff_dim: 512
+transformer_dropout_prob: 0.1
+frame_embedding_num: 200 
+caption_decoder_type: standard
+cap_nheads: 1
+cap_dec_n_points: 4
+cap_num_feature_levels: 4
+soft_attention: 1
+att_hid_size: 512
+
+ec_alpha: 1.0
+
+#cost_alpha: 0.5
+#cost_gamma: 1
+#focal_alpha: 0.5
+#focal_gamma: 1
+caption_loss_coef: 2
+giou_loss_coef: 4
+bbox_loss_coef: 0
+cls_loss_coef: 2
+count_loss_coef: 0.5
+max_eseq_length: 20
+lloss_cross_entropy: 0
+lloss_focal_loss: 0
+lloss_gau_mask: 1
+
+
+
+
+with_box_refine: 1
+fix_xcw: 1
+set_cost_caption: 0
+set_cost_giou: 4
+set_cost_bbox: 0
+set_cost_class: 2
+set_cost_cl: 2.0
