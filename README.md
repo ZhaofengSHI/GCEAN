@@ -39,9 +39,9 @@ bash szf_scripts_new/exo2ego.sh
 ```
 
 ## Data
-The EgoMe-UE2DPAC benchmark is constructed based on the EgoMe dataset
+The EgoMe-UE2DPAC benchmark is constructed based on the EgoMe dataset https://huggingface.co/datasets/HeqianQiu/EgoMe
 
-You can access the pre-processed data of the EgoMe-UE2DPAC benchmark by contacting the author by e-mail: zfshi@std.uestc.edu.cn
+You can access the processed data of our proposed EgoMe-UE2DPAC benchmark by contacting the author by e-mail: zfshi@std.uestc.edu.cn
 
 
 
