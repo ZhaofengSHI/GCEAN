@@ -45,6 +45,8 @@ You can access the processed data of our proposed EgoMe-UE2DPAC benchmark by con
 
 ## References
 
+**GCEAN:**
+
 ```
 @inproceedings{shi2025unsupervised,
   title={Unsupervised Ego-and Exo-centric Dense Procedural Activity Captioning via Gaze Consensus Adaptation},
@@ -54,6 +56,8 @@ You can access the processed data of our proposed EgoMe-UE2DPAC benchmark by con
   year={2025}
 }
 ```
+
+**EgoMe dataset:**
 
 ```
 @article{qiu2025egome,
