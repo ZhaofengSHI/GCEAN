@@ -39,9 +39,14 @@ bash szf_scripts_new/exo2ego.sh
 ```
 
 ## Data
+
+(Update on April 3, 2026): I have uploaded the processed data to Google Drive: https://drive.google.com/file/d/12t_Pdw1TNI9KTNYw-CAm__ixYe13QSM-/view?usp=drive_link
+
 The EgoMe-UE2DPAC benchmark is constructed based on the EgoMe dataset https://huggingface.co/datasets/HeqianQiu/EgoMe
 
 You can access the processed data of our proposed EgoMe-UE2DPAC benchmark by contacting the author by e-mail: zfshi@std.uestc.edu.cn
+
+
 
 ## References
 
